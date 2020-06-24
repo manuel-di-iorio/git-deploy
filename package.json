@@ -1,0 +1,26 @@
+{
+  "name": "myald-task-runner",
+  "version": "1.0.0",
+  "description": "task runner",
+  "main": "index.js",
+  "private": true,
+  "keywords": [
+    "task",
+    "runner"
+  ],
+  "author": "MyALD",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-semistandard": "^15.0.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "semistandard": "^14.2.0"
+  },
+  "dependencies": {
+    "pino": "^6.3.2",
+    "pino-pretty": "^4.0.0",
+    "yargs": "^15.3.1"
+  }
+}
