@@ -1,6 +1,6 @@
-# MyALD Task Runner
+# Github Webhook deploy
 
-Execute the project deploys to azure/kubernetes systems, by properly updating the versions
+Execute the project deploys by listening to Github Push Webhooks and running a deploy script
 
 ## Install
 
@@ -8,19 +8,21 @@ Execute the project deploys to azure/kubernetes systems, by properly updating th
 npm ci
 ```
 
+## Configuration
+
+Create an .env file with your configurations from the default.env
+
 ## Run
 
 ```bash
-$ node deploy <service1> <service2> etc..
+$ node index.js
 ```
 
-Service parameter can be:
-
-`pwa`, `bo-frontend` or one of the microservices, like `cms`, `contract`, etc.
-
-Example: `$ node deploy vehicle`
-
 ---
+
+## Github Webhooks Guide
+
+https://docs.github.com/webhooks/
 
 ## License
 
