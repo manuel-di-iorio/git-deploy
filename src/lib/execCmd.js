@@ -1,8 +1,7 @@
 const { exec } = require('child_process');
-const { log } = require('./logger');
 
-exports.cmd = (command) => {
-  log.trace(`$ ${command}`);
+exports.cmd = (command, logger) => {
+  logger.trace(`$ ${command}`);
 
   return new Promise((resolve, reject) => {
     const cmd = exec(command);

@@ -1,11 +1,17 @@
 # Github Webhook deploy
 
-Execute the project deploys by listening to Github Push Webhooks and running a deploy script
+Automatically execute a deploy script by running a Node.js server that listens to a Github webhook. Also works behind VPN/firewalls through a Smee.io outbound proxy
 
 ## Install
 
 ```bash
-npm ci
+npm install
+```
+
+# Start 
+
+```bash
+npm start
 ```
 
 ## Configuration

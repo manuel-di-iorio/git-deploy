@@ -1,14 +1,14 @@
 {
-  "name": "myald-task-runner",
-  "version": "1.0.0",
-  "description": "task runner",
-  "main": "index.js",
+  "name": "git-deploy",
+  "version": "2.0.0",
+  "description": "Automatically execute a deploy script by running a Node.js server that listens to a Github/bitbucket webhook. Also works behind VPN/firewalls through a Smee.io outbound proxy",
+  "main": "src/index.js",
   "private": true,
-  "keywords": [
-    "task",
-    "runner"
-  ],
-  "author": "MyALD",
+  "author": "Manuel Di Iorio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manuel-di-iorio/git-deploy.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "eslint-config-semistandard": "^15.0.0",
@@ -16,7 +16,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "semistandard": "^14.2.0"
+    "semistandard": "^16.0.1"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -25,6 +25,10 @@
     "express-github-webhook": "^1.0.6",
     "helmet": "^4.1.1",
     "pino": "^6.3.2",
-    "pino-pretty": "^4.0.0"
+    "pino-pretty": "^4.0.0",
+    "smee-client": "^1.0.1"
+  },
+  "scripts": {
+    "start": "node ."
   }
 }
