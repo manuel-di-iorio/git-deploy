@@ -1,4 +1,4 @@
-# Github Webhook deploy
+# GIT Deploy
 
 Automatically execute a deploy script by running a Node.js server that listens to a Github webhook. Also works behind VPN/firewalls through a Smee.io outbound proxy
 
@@ -26,9 +26,10 @@ $ node index.js
 
 ---
 
-## Github Webhooks Guide
+## Webhooks Guide
 
 https://docs.github.com/webhooks/
+https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/
 
 ## License
 
