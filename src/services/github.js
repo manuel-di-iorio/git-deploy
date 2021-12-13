@@ -13,7 +13,9 @@ exports.githubService = (server) => {
 
   webhookHandler.on('push', async (repo, data) => {
     if (data.ref !== `refs/heads/${WEBHOOK_BRANCH}`) return;
-    log.debug(`Deploy issued by ${data.pusher.name}`);
+    log.debug(`Issued push by ${data.pusher.name}`);
+    // console.dir(data, { depth: null })
+    // logger.debug(`Commit ${data.new.target.hash}: ${commit.new.target.message}`); // @todo
 
     try {
       // Start the deploy flow
